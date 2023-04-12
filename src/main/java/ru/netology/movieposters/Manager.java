@@ -23,19 +23,19 @@ public class Manager {
         return films;
     }
 
-//    public String[] findLast() {
-//        int allFilms;
-//        if (films.length < limit) {
-//            allFilms = films.length;
-//        } else {
-//            allFilms = limit;
-//        }
-//        String[] tmp = new String[allFilms];
-//        for (int i = 0; i < tmp.length; i++) {
-//            tmp[i] = films[films.length - 1 - i];
-//        }
-//        return tmp;
-//    }
+    public String[] findLast() {
+        int allFilms;
+        if (films.length < limit) {
+            allFilms = films.length;
+        } else {
+            allFilms = limit;
+        }
+        String[] tmp = new String[allFilms];
+        for (int i = 0; i < tmp.length; i++) {
+            tmp[i] = films[films.length - 1 - i];
+        }
+        return tmp;
+    }
 
 }
 
